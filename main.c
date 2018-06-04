@@ -19,7 +19,7 @@ void GPIO_Configuration(void)
 	/* Enable the GPIO_LED Clock */
 	RCC_APB2PeriphClockCmd( RCC_APB2Periph_GPIOA | RCC_APB2Periph_GPIOB | RCC_APB2Periph_AFIO , ENABLE); 						 
  	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO | RCC_APB2Periph_GPIOB , ENABLE);
-  GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable,ENABLE);
+	GPIO_PinRemapConfig(GPIO_Remap_SWJ_Disable,ENABLE);
 	GPIO_PinRemapConfig(GPIO_Remap_SWJ_JTAGDisable , ENABLE);
 	//OLED 
 	GPIO_DeInit(GPIOB);	 //将外设GPIOB寄存器重设为缺省值
