@@ -1060,9 +1060,9 @@ Removing Unused input sections from the image.
     Removing dma_stm32f10x.o(i.DMA2_Channel4_IRQHandler), (32 bytes).
     Removing dma_stm32f10x.o(i.DMA_ChannelInitialize), (464 bytes).
     Removing dma_stm32f10x.o(i.DMA_ChannelUninitialize), (356 bytes).
-    Removing dma_stm32f10x.o(i.NVIC_ClearPendingIRQ), (24 bytes).
-    Removing dma_stm32f10x.o(i.NVIC_DisableIRQ), (24 bytes).
-    Removing dma_stm32f10x.o(i.NVIC_EnableIRQ), (22 bytes).
+    Removing dma_stm32f10x.o(i.NVIC_ClearPendingIRQ), (28 bytes).
+    Removing dma_stm32f10x.o(i.NVIC_DisableIRQ), (28 bytes).
+    Removing dma_stm32f10x.o(i.NVIC_EnableIRQ), (26 bytes).
     Removing dma_stm32f10x.o(.data), (2 bytes).
     Removing gpio_stm32f10x.o(.rev16_text), (4 bytes).
     Removing gpio_stm32f10x.o(.revsh_text), (4 bytes).
@@ -1084,7 +1084,7 @@ Removing Unused input sections from the image.
     Removing cdrcmple.o(.text), (48 bytes).
     Removing depilogue.o(.text), (186 bytes).
 
-562 unused section(s) (total 21036 bytes) removed from the image.
+562 unused section(s) (total 21048 bytes) removed from the image.
 
 ==============================================================================
 
@@ -1131,56 +1131,56 @@ Image Symbol Table
     ../fplib/microlib/fpepilogue.c           0x00000000   Number         0  depilogue.o ABSOLUTE
     ../fplib/microlib/fpfix.c                0x00000000   Number         0  dfixul.o ABSOLUTE
     ../fplib/microlib/fpmul.c                0x00000000   Number         0  dmul.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\misc.c 0x00000000   Number         0  misc.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_adc.c 0x00000000   Number         0  stm32f10x_adc.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_bkp.c 0x00000000   Number         0  stm32f10x_bkp.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_can.c 0x00000000   Number         0  stm32f10x_can.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_cec.c 0x00000000   Number         0  stm32f10x_cec.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_crc.c 0x00000000   Number         0  stm32f10x_crc.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_dac.c 0x00000000   Number         0  stm32f10x_dac.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_dbgmcu.c 0x00000000   Number         0  stm32f10x_dbgmcu.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_dma.c 0x00000000   Number         0  stm32f10x_dma.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_exti.c 0x00000000   Number         0  stm32f10x_exti.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_flash.c 0x00000000   Number         0  stm32f10x_flash.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_fsmc.c 0x00000000   Number         0  stm32f10x_fsmc.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_gpio.c 0x00000000   Number         0  stm32f10x_gpio.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_i2c.c 0x00000000   Number         0  stm32f10x_i2c.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_iwdg.c 0x00000000   Number         0  stm32f10x_iwdg.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_pwr.c 0x00000000   Number         0  stm32f10x_pwr.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_rcc.c 0x00000000   Number         0  stm32f10x_rcc.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_rtc.c 0x00000000   Number         0  stm32f10x_rtc.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_sdio.c 0x00000000   Number         0  stm32f10x_sdio.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_spi.c 0x00000000   Number         0  stm32f10x_spi.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_tim.c 0x00000000   Number         0  stm32f10x_tim.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_usart.c 0x00000000   Number         0  stm32f10x_usart.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_wwdg.c 0x00000000   Number         0  stm32f10x_wwdg.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\RTE_Driver\DMA_STM32F10x.c 0x00000000   Number         0  dma_stm32f10x.o ABSOLUTE
-    F:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\RTE_Driver\GPIO_STM32F10x.c 0x00000000   Number         0  gpio_stm32f10x.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\misc.c 0x00000000   Number         0  misc.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_adc.c 0x00000000   Number         0  stm32f10x_adc.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_bkp.c 0x00000000   Number         0  stm32f10x_bkp.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_can.c 0x00000000   Number         0  stm32f10x_can.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_cec.c 0x00000000   Number         0  stm32f10x_cec.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_crc.c 0x00000000   Number         0  stm32f10x_crc.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_dac.c 0x00000000   Number         0  stm32f10x_dac.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_dbgmcu.c 0x00000000   Number         0  stm32f10x_dbgmcu.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_dma.c 0x00000000   Number         0  stm32f10x_dma.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_exti.c 0x00000000   Number         0  stm32f10x_exti.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_flash.c 0x00000000   Number         0  stm32f10x_flash.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_fsmc.c 0x00000000   Number         0  stm32f10x_fsmc.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_gpio.c 0x00000000   Number         0  stm32f10x_gpio.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_i2c.c 0x00000000   Number         0  stm32f10x_i2c.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_iwdg.c 0x00000000   Number         0  stm32f10x_iwdg.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_pwr.c 0x00000000   Number         0  stm32f10x_pwr.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_rcc.c 0x00000000   Number         0  stm32f10x_rcc.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_rtc.c 0x00000000   Number         0  stm32f10x_rtc.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_sdio.c 0x00000000   Number         0  stm32f10x_sdio.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_spi.c 0x00000000   Number         0  stm32f10x_spi.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_tim.c 0x00000000   Number         0  stm32f10x_tim.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_usart.c 0x00000000   Number         0  stm32f10x_usart.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_wwdg.c 0x00000000   Number         0  stm32f10x_wwdg.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\RTE_Driver\\DMA_STM32F10x.c 0x00000000   Number         0  dma_stm32f10x.o ABSOLUTE
-    F:\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\RTE_Driver\\GPIO_STM32F10x.c 0x00000000   Number         0  gpio_stm32f10x.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\misc.c 0x00000000   Number         0  misc.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_adc.c 0x00000000   Number         0  stm32f10x_adc.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_bkp.c 0x00000000   Number         0  stm32f10x_bkp.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_can.c 0x00000000   Number         0  stm32f10x_can.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_cec.c 0x00000000   Number         0  stm32f10x_cec.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_crc.c 0x00000000   Number         0  stm32f10x_crc.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_dac.c 0x00000000   Number         0  stm32f10x_dac.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_dbgmcu.c 0x00000000   Number         0  stm32f10x_dbgmcu.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_dma.c 0x00000000   Number         0  stm32f10x_dma.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_exti.c 0x00000000   Number         0  stm32f10x_exti.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_flash.c 0x00000000   Number         0  stm32f10x_flash.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_fsmc.c 0x00000000   Number         0  stm32f10x_fsmc.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_gpio.c 0x00000000   Number         0  stm32f10x_gpio.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_i2c.c 0x00000000   Number         0  stm32f10x_i2c.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_iwdg.c 0x00000000   Number         0  stm32f10x_iwdg.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_pwr.c 0x00000000   Number         0  stm32f10x_pwr.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_rcc.c 0x00000000   Number         0  stm32f10x_rcc.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_rtc.c 0x00000000   Number         0  stm32f10x_rtc.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_sdio.c 0x00000000   Number         0  stm32f10x_sdio.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_spi.c 0x00000000   Number         0  stm32f10x_spi.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_tim.c 0x00000000   Number         0  stm32f10x_tim.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_usart.c 0x00000000   Number         0  stm32f10x_usart.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\Device\\StdPeriph_Driver\\src\\stm32f10x_wwdg.c 0x00000000   Number         0  stm32f10x_wwdg.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\RTE_Driver\\DMA_STM32F10x.c 0x00000000   Number         0  dma_stm32f10x.o ABSOLUTE
+    D:\\wjyl\\Keil_v5\\ARM\\PACK\\Keil\\STM32F1xx_DFP\\2.1.0\\RTE_Driver\\GPIO_STM32F10x.c 0x00000000   Number         0  gpio_stm32f10x.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\misc.c 0x00000000   Number         0  misc.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_adc.c 0x00000000   Number         0  stm32f10x_adc.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_bkp.c 0x00000000   Number         0  stm32f10x_bkp.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_can.c 0x00000000   Number         0  stm32f10x_can.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_cec.c 0x00000000   Number         0  stm32f10x_cec.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_crc.c 0x00000000   Number         0  stm32f10x_crc.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_dac.c 0x00000000   Number         0  stm32f10x_dac.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_dbgmcu.c 0x00000000   Number         0  stm32f10x_dbgmcu.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_dma.c 0x00000000   Number         0  stm32f10x_dma.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_exti.c 0x00000000   Number         0  stm32f10x_exti.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_flash.c 0x00000000   Number         0  stm32f10x_flash.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_fsmc.c 0x00000000   Number         0  stm32f10x_fsmc.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_gpio.c 0x00000000   Number         0  stm32f10x_gpio.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_i2c.c 0x00000000   Number         0  stm32f10x_i2c.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_iwdg.c 0x00000000   Number         0  stm32f10x_iwdg.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_pwr.c 0x00000000   Number         0  stm32f10x_pwr.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_rcc.c 0x00000000   Number         0  stm32f10x_rcc.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_rtc.c 0x00000000   Number         0  stm32f10x_rtc.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_sdio.c 0x00000000   Number         0  stm32f10x_sdio.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_spi.c 0x00000000   Number         0  stm32f10x_spi.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_tim.c 0x00000000   Number         0  stm32f10x_tim.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_usart.c 0x00000000   Number         0  stm32f10x_usart.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\stm32f10x_wwdg.c 0x00000000   Number         0  stm32f10x_wwdg.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\RTE_Driver\DMA_STM32F10x.c 0x00000000   Number         0  dma_stm32f10x.o ABSOLUTE
+    D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\RTE_Driver\GPIO_STM32F10x.c 0x00000000   Number         0  gpio_stm32f10x.o ABSOLUTE
     OLED.c                                   0x00000000   Number         0  oled.o ABSOLUTE
     OLED.c                                   0x00000000   Number         0  oled.o ABSOLUTE
     RTE\Device\STM32F103VE\startup_stm32f10x_hd.s 0x00000000   Number         0  startup_stm32f10x_hd.o ABSOLUTE
@@ -1767,25 +1767,25 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-      1356        142          0          4         16       2994   adc_8.o
-        68          0          0          0          0     252802   delay.o
-       372         28          0          0          0       4305   dht11.o
-       368         50          0          0          0      11911   dma_stm32f10x.o
-      1568        316          0          5          0       2086   main.o
-       132         22          0          0          0       1683   misc.o
-      1156         30       4689          0          0       6513   oled.o
-        36          8        304          0       1024        772   startup_stm32f10x_hd.o
-       482         24          0          0          0       8386   stm32f10x_adc.o
-       416          8          0          0          0       3602   stm32f10x_dma.o
-       648         34          0          0          0       5412   stm32f10x_gpio.o
-        26          0          0          0          0       3182   stm32f10x_it.o
-       396         56          0         20          0       7003   stm32f10x_rcc.o
-       662         28          0          0          0       8456   stm32f10x_usart.o
-       328         28          0          0          0       1813   system_stm32f10x.o
-      1496        148          0          2         18       4268   usart.o
+      1356        142          0          4         16       3222   adc_8.o
+        68          0          0          0          0     253018   delay.o
+       372         28          0          0          0       4549   dht11.o
+       368         50          0          0          0      12183   dma_stm32f10x.o
+      1568        316          0          5          0       2222   main.o
+       132         22          0          0          0       1723   misc.o
+      1156         30       4689          0          0       6909   oled.o
+        36          8        304          0       1024        804   startup_stm32f10x_hd.o
+       482         24          0          0          0       8498   stm32f10x_adc.o
+       416          8          0          0          0       3646   stm32f10x_dma.o
+       648         34          0          0          0       5492   stm32f10x_gpio.o
+        26          0          0          0          0       3470   stm32f10x_it.o
+       396         56          0         20          0       7075   stm32f10x_rcc.o
+       662         28          0          0          0       8568   stm32f10x_usart.o
+       328         28          0          0          0       1945   system_stm32f10x.o
+      1496        148          0          2         18       4572   usart.o
 
     ----------------------------------------------------------------------
-      9548        922       5028         32       1060     325188   Object Totals
+      9548        922       5028         32       1060     327896   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         38          0          3          1          2          0   (incl. Padding)
 
@@ -1827,8 +1827,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     10052        952       5028         36       1060     320316   Grand Totals
-     10052        952       5028         36       1060     320316   ELF Image Totals
+     10052        952       5028         36       1060     323024   Grand Totals
+     10052        952       5028         36       1060     323024   ELF Image Totals
      10052        952       5028         36          0          0   ROM Totals
 
 ==============================================================================

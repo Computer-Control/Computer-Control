@@ -3,7 +3,7 @@
  * Auto generated Run-Time-Environment Component Configuration File
  *      *** Do not modify ! ***
  *
- * Project: 'DHT11' 
+ * Project: 'ComputerControl' 
  * Target:  'Target 1' 
  */
 
