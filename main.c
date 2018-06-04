@@ -42,9 +42,9 @@ void GPIO_Configuration(void)
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 	
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;  
-  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  
-  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;              
-  GPIO_Init(GPIOA , &GPIO_InitStructure);   
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;              
+	GPIO_Init(GPIOA , &GPIO_InitStructure);   
 	
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -67,8 +67,8 @@ int main(void)
 	SystemInit();			//设置系统时钟72MHZ
 	GPIO_Configuration();
 	USART1_Init();    //初始化配置TIM 
-  USART2_Init();	
-  ADC1_Init();
+	USART2_Init();	
+	ADC1_Init();
 	LCD_Init();
 		
 	delay_ms(500);	
@@ -80,9 +80,9 @@ int main(void)
   while(1)
   {
 		GPIO_SetBits(GPIOB , GPIO_Pin_9); 
-    printf("\r\n *********************\r\n");	
+		printf("\r\n *********************\r\n");	
 		AD_Start(); 
-    USART2_Tx_Puts();
+		USART2_Tx_Puts();
  
 
 		printf("\r\n *****结束一次采样*****\r\n"); 
