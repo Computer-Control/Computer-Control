@@ -3,6 +3,8 @@
 #include "usart.h"
 #include "includes.h"
 #include "OLED.h"
+#include "adc_8.h"
+#include "dac_8.h"
 
 
 /**************************************************************************************
@@ -29,6 +31,7 @@ void GPIO_Configuration(void)
  
 	
 	GPIO_DeInit(GPIOA);	 //将外设GPIOA寄存器重设为缺省值
+	
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_2;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;    //推挽输出
@@ -37,6 +40,11 @@ void GPIO_Configuration(void)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;    //浮空输入
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
+	
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;  
+  GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  
+  GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;              
+  GPIO_Init(GPIOA , &GPIO_InitStructure);   
 	
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;

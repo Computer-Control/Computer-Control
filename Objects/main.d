@@ -42,3 +42,4 @@
 .\objects\main.o: adc_8.h
 .\objects\main.o: OLED.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: dac_8.h

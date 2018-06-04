@@ -381,11 +381,6 @@
               <FilePath>.\delay.c</FilePath>
             </File>
             <File>
-              <FileName>dht11.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\dht11.c</FilePath>
-            </File>
-            <File>
               <FileName>main.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
@@ -409,6 +404,11 @@
               <FileName>OLED.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\OLED.c</FilePath>
+            </File>
+            <File>
+              <FileName>dac_8.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\dac_8.c</FilePath>
             </File>
           </Files>
         </Group>
