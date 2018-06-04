@@ -71,9 +71,12 @@ int main(void)
   ADC1_Init();
 	LCD_Init();
 		
-	GPIO_ResetBits(GPIOB , GPIO_Pin_9);
 	delay_ms(500);	
+	
 	printf("\r\n **¿ªÊ¼ad×ª»»**\r\n");
+	
+	DAC_init();
+	
   while(1)
   {
 		GPIO_SetBits(GPIOB , GPIO_Pin_9); 

@@ -22,12 +22,11 @@ int DAC_init(void)
   
     TIM_Configuration();  
   
-#endif  
-  
-    while(1);   
+#endif   
+		return 0;
   
 }  
-  
+ 
   
 void DAC_Configuration(void)  
 {  
