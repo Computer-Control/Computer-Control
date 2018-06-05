@@ -3,9 +3,6 @@
 #include "usart.h"
 #include "includes.h"
 #include "OLED.h"
-#include "adc_8.h"
-#include "dac_8.h"
-
 
 /**************************************************************************************
  * 描  述 : GPIO/USART1初始化配置
@@ -40,11 +37,7 @@ void GPIO_Configuration(void)
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_3;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;    //浮空输入
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
-	
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4;  
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;  
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP;              
-	GPIO_Init(GPIOA , &GPIO_InitStructure);   
+	  
 	
 	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_9;
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
@@ -68,20 +61,16 @@ int main(void)
 	GPIO_Configuration();
 	USART1_Init();    //初始化配置TIM 
 	USART2_Init();	
-	ADC1_Init();
 	LCD_Init();
 		
 	delay_ms(500);	
 	
 	printf("\r\n **开始ad转换**\r\n");
 	
-	DAC_init();
-	
   while(1)
   {
 		GPIO_SetBits(GPIOB , GPIO_Pin_9); 
 		printf("\r\n *********************\r\n");	
-		AD_Start(); 
 		USART2_Tx_Puts();
  
 

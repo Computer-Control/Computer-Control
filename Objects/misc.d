@@ -9,13 +9,11 @@
 .\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h
 .\objects\misc.o: C:\Users\liuhai\Desktop\Computer-Control\RTE\Device\STM32F103VE\stm32f10x_conf.h
 .\objects\misc.o: C:\Users\liuhai\Desktop\Computer-Control\RTE\RTE_Components.h
-.\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_adc.h
-.\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h
 .\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_bkp.h
+.\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h
 .\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_can.h
 .\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_cec.h
 .\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_crc.h
-.\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_dac.h
 .\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_dbgmcu.h
 .\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_dma.h
 .\objects\misc.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h

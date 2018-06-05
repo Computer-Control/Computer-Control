@@ -8,13 +8,11 @@
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\system_stm32f10x.h
 .\objects\main.o: C:\Users\liuhai\Desktop\Computer-Control\RTE\Device\STM32F103VE\stm32f10x_conf.h
 .\objects\main.o: C:\Users\liuhai\Desktop\Computer-Control\RTE\RTE_Components.h
-.\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_adc.h
-.\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_bkp.h
+.\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_can.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_cec.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_crc.h
-.\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_dac.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_dbgmcu.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_dma.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_exti.h
@@ -42,4 +40,3 @@
 .\objects\main.o: adc_8.h
 .\objects\main.o: OLED.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
-.\objects\main.o: dac_8.h
