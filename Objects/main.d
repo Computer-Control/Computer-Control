@@ -37,6 +37,5 @@
 .\objects\main.o: stm32f10x_it.h
 .\objects\main.o: usart.h
 .\objects\main.o: delay.h
-.\objects\main.o: adc_8.h
 .\objects\main.o: OLED.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

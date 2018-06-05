@@ -48,6 +48,19 @@ void GPIO_Configuration(void)
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;    //浮空输入
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 	
+	GPIO_DeInit(GPIOC);	 //将外设GPIOC寄存器重设为缺省值
+	
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7;	
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;    //推挽输出
+	GPIO_Init(GPIOC, &GPIO_InitStructure);
+	
+	GPIO_DeInit(GPIOD);	 //将外设GPIOD寄存器重设为缺省值
+	
+	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7;	
+	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
+	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;    //浮空输入
+	GPIO_Init(GPIOD, &GPIO_InitStructure);
 }
 
 /**************************************************************************************
@@ -69,7 +82,7 @@ int main(void)
 	
   while(1)
   {
-		GPIO_SetBits(GPIOB , GPIO_Pin_9); 
+		GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_9);
 		printf("\r\n *********************\r\n");	
 		USART2_Tx_Puts();
  

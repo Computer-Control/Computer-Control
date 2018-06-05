@@ -4,7 +4,6 @@
 
 #include "usart.h"
 #include "delay.h"
-#include "adc_8.h"
 
 
 
