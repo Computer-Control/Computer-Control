@@ -39,3 +39,4 @@
 .\objects\main.o: delay.h
 .\objects\main.o: OLED.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\objects\main.o: DS12C887.h
