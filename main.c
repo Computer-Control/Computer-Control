@@ -10,6 +10,35 @@
  **************************************************************************************/
 int a[8];
 /**************************************************************************************
+* 描述 : lcd动态显示数字
+**************************************************************************************/
+void lcd(u8 x,u8 y,int z)
+{
+	switch(z)
+	{
+		case 0: LCD_Print(x, y, "0",TYPE16X16,TYPE8X16);
+		break;
+		case 1: LCD_Print(x, y, "1",TYPE16X16,TYPE8X16);
+		break;
+		case 2: LCD_Print(x, y, "2",TYPE16X16,TYPE8X16);
+		break;
+		case 3: LCD_Print(x, y, "3",TYPE16X16,TYPE8X16);
+		break;
+		case 4: LCD_Print(x, y, "4",TYPE16X16,TYPE8X16);
+		break;
+		case 5: LCD_Print(x, y, "5",TYPE16X16,TYPE8X16);
+		break;
+		case 6: LCD_Print(x, y, "6",TYPE16X16,TYPE8X16);
+		break;
+		case 7: LCD_Print(x, y, "7",TYPE16X16,TYPE8X16);
+		break;
+		case 8: LCD_Print(x, y, "8",TYPE16X16,TYPE8X16);
+		break;
+		case 9: LCD_Print(y, y, "9",TYPE16X16,TYPE8X16);
+		break;
+	}
+}
+/**************************************************************************************
  * 描  述 : GPIO/USART1初始化配置
  * 入  参 : 无
  * 返回值 : 无
@@ -74,7 +103,8 @@ void GPIO_Configuration(void)
  * 返回值 : 无
  **************************************************************************************/
 int main(void)
-{ 
+{
+	int i,j,p;
 	SystemInit();			//设置系统时钟72MHZ
 	GPIO_Configuration();
 	USART1_Init();    //初始化配置TIM 
@@ -118,5 +148,15 @@ int main(void)
 		LCD_Print(0, 48, "a[6]:",TYPE16X16,TYPE8X16);
 		LCD_Print(64, 48, "a[7]:",TYPE16X16,TYPE8X16);
 		
+
+		p=0;
+		for(i=0;i<4;i++)
+		{
+			for(j=0;j<2;j++)
+			{
+				p++;
+				lcd(64*j,16*i,a[p]);
+			}
+		}
 	} 		
 }
