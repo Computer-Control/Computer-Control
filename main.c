@@ -4,6 +4,7 @@
 #include "includes.h"
 #include "OLED.h"
 #include "DS12C887.h"
+#include "pid.h" 
 
 
 /**************************************************************************************
@@ -39,8 +40,11 @@ void lcd(u8 x,u8 y,int z)
 		break;
 	}
 }
-
-
+/**************************************************************************************
+ * 描  述 : DS12C887初始化配置
+ * 入  参 : 无
+ * 返回值 : 无
+ **************************************************************************************/
 void DS12C887_Init(void)  
 {  
     FSMC_NORSRAMInitTypeDef fsmc;  
@@ -84,7 +88,7 @@ void DS12C887_Init(void)
     GPIO_WriteBit(GPIOA, GPIO_Pin_8, Bit_SET); // RESET=1, 撤销复位信号  
 }  
 /**************************************************************************************
- * 描  述 : GPIO/USART1初始化配置
+ * 描  述 : GPIO初始化配置
  * 入  参 : 无
  * 返回值 : 无
  **************************************************************************************/
@@ -179,6 +183,8 @@ int main(void)
 	
   while(1)
   {
+		pid_add();
+		
 		a[0]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_0);
 		a[1]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_1);
 		a[2]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_2);
