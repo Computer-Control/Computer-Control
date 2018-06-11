@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\ComputerControl.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\ComputerControl.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Tue Jun 05 17:14:22 2018
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060061: Last Updated: Mon Jun 11 14:23:41 2018
 <BR><P>
 <H3>Maximum Stack Usage =        160 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -452,6 +452,7 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WrDat
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WrCmd
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[63]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_SetBits))
@@ -480,11 +481,11 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = LCD_Init &rArr; LCD_Set_Pos &rArr; LCD_WrCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
-<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 <LI><a href="#[60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WrCmd
 <LI><a href="#[66]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Set_Pos
 <LI><a href="#[5f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Fill
 <LI><a href="#[65]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_DLY_ms
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -797,7 +798,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printf1.o(i.__0printf$1)
 </UL>
-<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 170 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 352 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = main &rArr; USART2_Tx_Puts &rArr; LCD_Print &rArr; LCD_P16x16Str &rArr; LCD_Set_Pos &rArr; LCD_WrCmd
 </UL>
 <BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART2_Tx_Puts
@@ -806,6 +807,7 @@ Global Symbols
 <LI><a href="#[47]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SystemInit
 <LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Print
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Init
+<LI><a href="#[64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ReadOutputDataBit
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Configuration
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms

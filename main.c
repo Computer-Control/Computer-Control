@@ -4,6 +4,11 @@
 #include "includes.h"
 #include "OLED.h"
 
+
+/**************************************************************************************
+ * 描  述 : 数组定义
+ **************************************************************************************/
+int a[8];
 /**************************************************************************************
  * 描  述 : GPIO/USART1初始化配置
  * 入  参 : 无
@@ -69,7 +74,7 @@ void GPIO_Configuration(void)
  * 返回值 : 无
  **************************************************************************************/
 int main(void)
-{
+{ 
 	SystemInit();			//设置系统时钟72MHZ
 	GPIO_Configuration();
 	USART1_Init();    //初始化配置TIM 
@@ -82,19 +87,36 @@ int main(void)
 	
   while(1)
   {
-		GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_9);
+		a[0]=GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_0);
+		a[1]=GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_1);
+		a[2]=GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_2);
+		a[3]=GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_3);
+		a[4]=GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_4);
+		a[5]=GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_5);
+		a[6]=GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_6);
+		a[7]=GPIO_ReadOutputDataBit(GPIOD,GPIO_Pin_7);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_0);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_1);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_2);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_3);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_4);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_5);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_6);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_7);
 		printf("\r\n *********************\r\n");	
 		USART2_Tx_Puts();
  
 
 		printf("\r\n *****结束一次采样*****\r\n"); 
 		delay_ms(1500);
-		LCD_Print(0, 0, "co2浓度：",TYPE16X16,TYPE8X16);
-		LCD_Print(0, 16, "温度为：",TYPE16X16,TYPE16X16);
-		LCD_Print(96, 16, "℃",TYPE16X16,TYPE16X16);
-		LCD_Print(0, 32, "湿度为：",TYPE16X16,TYPE6X8);
-		LCD_Print(96, 32, "%RH",TYPE16X16,TYPE8X16);
-		LCD_Print(0, 48, "光照强度：",TYPE16X16,TYPE6X8);
+		LCD_Print(0, 0, "a[0]:",TYPE16X16,TYPE8X16);
+		LCD_Print(64, 0, "a[1]:",TYPE16X16,TYPE8X16);
+		LCD_Print(0, 16, "a[2]:",TYPE16X16,TYPE8X16);
+		LCD_Print(64, 16, "a[3]:",TYPE16X16,TYPE8X16);
+		LCD_Print(0, 32, "a[4]:",TYPE16X16,TYPE8X16);
+		LCD_Print(64, 32, "a[5]:",TYPE16X16,TYPE8X16);
+		LCD_Print(0, 48, "a[6]:",TYPE16X16,TYPE8X16);
+		LCD_Print(64, 48, "a[7]:",TYPE16X16,TYPE8X16);
 		
 	} 		
 }
