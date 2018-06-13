@@ -11,35 +11,7 @@
  * 描  述 : 数组定义
  **************************************************************************************/
 int a[8];
-/**************************************************************************************
-* 描述 : lcd动态显示数字
-**************************************************************************************/
-void lcd(u8 x,u8 y,int z)
-{
-	switch(z)
-	{
-		case 0: LCD_Print(x, y, "0",TYPE16X16,TYPE8X16);
-		break;
-		case 1: LCD_Print(x, y, "1",TYPE16X16,TYPE8X16);
-		break;
-		case 2: LCD_Print(x, y, "2",TYPE16X16,TYPE8X16);
-		break;
-		case 3: LCD_Print(x, y, "3",TYPE16X16,TYPE8X16);
-		break;
-		case 4: LCD_Print(x, y, "4",TYPE16X16,TYPE8X16);
-		break;
-		case 5: LCD_Print(x, y, "5",TYPE16X16,TYPE8X16);
-		break;
-		case 6: LCD_Print(x, y, "6",TYPE16X16,TYPE8X16);
-		break;
-		case 7: LCD_Print(x, y, "7",TYPE16X16,TYPE8X16);
-		break;
-		case 8: LCD_Print(x, y, "8",TYPE16X16,TYPE8X16);
-		break;
-		case 9: LCD_Print(y, y, "9",TYPE16X16,TYPE8X16);
-		break;
-	}
-}
+
 /**************************************************************************************
  * 描  述 : DS12C887初始化配置
  * 入  参 : 无
@@ -152,13 +124,11 @@ void GPIO_Configuration(void)
  **************************************************************************************/
 int main(void)
 {
-	int i,j,p;
 	SystemInit();			//设置系统时钟72MHZ
 	GPIO_Configuration();
 	USART1_Init();    //初始化配置TIM 
 	USART2_Init();
 	DS12C887_Init();
-	LCD_Init();
 		
 	delay_ms(500);	
 	
@@ -178,57 +148,7 @@ int main(void)
      RTC2->CR1 = RTC2_CR1_DV1; // 打开晶振  
      RTC2->CR2 &= ~RTC2_CR2_SET; // 时钟开始走时  
     } 
-	
-	printf("\r\n **开始ad转换**\r\n");
-	
-  while(1)
-  {
-		pid_add();
-		
-		a[0]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_0);
-		a[1]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_1);
-		a[2]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_2);
-		a[3]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_3);
-		a[4]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_4);
-		a[5]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_5);
-		a[6]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_6);
-		a[7]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_7);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_8);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_9);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_10);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_11);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_12);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_13);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_14);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_15);
-		printf("\r\n *********************\r\n");	
-		USART2_Tx_Puts();
- 
 
-		printf("\r\n *****结束一次采样*****\r\n"); 
-		delay_ms(1500);
-		LCD_Print(0, 0, "a[0]:",TYPE16X16,TYPE8X16);
-		LCD_Print(64, 0, "a[1]:",TYPE16X16,TYPE8X16);
-		LCD_Print(0, 16, "a[2]:",TYPE16X16,TYPE8X16);
-		LCD_Print(64, 16, "a[3]:",TYPE16X16,TYPE8X16);
-		LCD_Print(0, 32, "a[4]:",TYPE16X16,TYPE8X16);
-		LCD_Print(64, 32, "a[5]:",TYPE16X16,TYPE8X16);
-		LCD_Print(0, 48, "a[6]:",TYPE16X16,TYPE8X16);
-		LCD_Print(64, 48, "a[7]:",TYPE16X16,TYPE8X16);
-		
-
-		p=0;
-		for(i=0;i<4;i++)
-		{
-			for(j=0;j<2;j++)
-			{
-				p++;
-				lcd(64*j,16*i,a[p]);
-			}
-		}
-		
- 
-      
     // 第一次启动后需要等较长的时间时钟才能开始走时   
     printf("%02d%02d-%02d-%02d", RTC2->CENTURY, RTC2->YEAR, RTC2->MONTH, RTC2->DATE);  
     if ((RTC2->CR4 & RTC2_CR4_VRT) == 0)  
@@ -242,6 +162,5 @@ int main(void)
     // 等待时间更新完毕  
     while ((RTC2->CR1 & RTC2_CR1_UIP) == 0);  
     while (RTC2->CR1 & RTC2_CR1_UIP);  
-    }  
 	 		
 }
