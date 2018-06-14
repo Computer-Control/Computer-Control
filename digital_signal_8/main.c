@@ -118,7 +118,11 @@ int main(void)
 	
   while(1)
   {
-		pid_add();
+		
+		GPIO_SetBits(GPIOA , GPIO_Pin_12);
+		GPIO_SetBits(GPIOA , GPIO_Pin_13);
+		GPIO_SetBits(GPIOA , GPIO_Pin_14);
+		GPIO_SetBits(GPIOA , GPIO_Pin_15);
 		
 		a[0]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_0);
 		a[1]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_1);
