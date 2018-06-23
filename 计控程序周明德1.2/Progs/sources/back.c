@@ -65,8 +65,8 @@ int DS12C887_Init(void)
     gpio.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_1 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_7 | GPIO_Pin_14 | GPIO_Pin_15;  
     GPIO_Init(GPIOD, &gpio);  
       
-    // PE7~10为AD4~7  
-    gpio.GPIO_Pin = GPIO_Pin_7 | GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10;  
+    // PD8~11为AD4~7  
+    gpio.GPIO_Pin = GPIO_Pin_8 | GPIO_Pin_9 | GPIO_Pin_10 | GPIO_Pin_11;  
     GPIO_Init(GPIOE, &gpio);  
       
     // FSMC的Bank1, Subbank1设为8位NOR Flash地址/数据线复用模式, 关闭NWAIT引脚  
