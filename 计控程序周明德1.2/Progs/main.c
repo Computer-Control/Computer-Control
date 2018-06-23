@@ -37,20 +37,13 @@ int main(void)
 		while(1)
 		{
 			keyscan(&keyboard);
-			gpioin=digitalin();
-			digitalout(0x08);
+			gpioin=digitalin();  //读八路输入
+			digitalout(0x08);     //八路输出
 			printf("%d,%d",keyboard,gpioin);
 			MODH_Poll();
 			
 			pid_add();
-		
-		  digital_in_out();
-			printf("\r\n *********************\r\n");	
-
-			printf("\r\n *****结束一次数字量*****\r\n"); 
-			
 			delay_ms(1500);
-			
 			oled();
 			DS12C887_printf();
 		}
