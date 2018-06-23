@@ -43,7 +43,7 @@ void lcd(u8 x,u8 y,int z)
  * 入  参 : 无
  * 返回值 : 无
  **************************************************************************************/
-void DS12C887_Init(void)  
+int DS12C887_Init(void)  
 {  
     FSMC_NORSRAMInitTypeDef fsmc;  
     FSMC_NORSRAMTimingInitTypeDef fsmc_timing;  
@@ -84,6 +84,8 @@ void DS12C887_Init(void)
       
     delay_ms(200);  
     GPIO_WriteBit(GPIOD, GPIO_Pin_2, Bit_SET); // RESET=1, 撤销复位信号  
+		
+		return 0;
 }  
 /**************************************************************************************
  * 描  述 : GPIO初始化配置
@@ -112,17 +114,6 @@ void GPIO(void)
 	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
 	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; 		 //推挽输出
 	GPIO_Init(GPIOC, &GPIO_InitStructure);
-/***	
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0|GPIO_Pin_1|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4|GPIO_Pin_5|GPIO_Pin_6|GPIO_Pin_7;	
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IN_FLOATING;    //浮空输入
-	GPIO_Init(GPIOC, &GPIO_InitStructure);
-	
-	GPIO_InitStructure.GPIO_Pin = GPIO_Pin_8|GPIO_Pin_9|GPIO_Pin_10|GPIO_Pin_11|GPIO_Pin_12|GPIO_Pin_13|GPIO_Pin_14|GPIO_Pin_15;	
-	GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF_PP;    //推挽输出 
-	GPIO_Init(GPIOC, &GPIO_InitStructure);
-****/
 }
 
 
@@ -185,24 +176,24 @@ int oled(void)
  * 入  参 : 无
  * 返回值 : 无
  **************************************************************************************/
- int digital_in_out(void)
+int digital_in_out(void)
  {
-	 	a[0]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_0);
-		a[1]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_1);
-		a[2]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_2);
-		a[3]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_3);
-		a[4]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_4);
-		a[5]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_5);
-		a[6]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_6);
-		a[7]=GPIO_ReadOutputDataBit(GPIOC,GPIO_Pin_7);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_8);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_9);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_10);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_11);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_12);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_13);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_14);
-		GPIO_ResetBits(GPIOC , GPIO_Pin_15);
+	 	a[0]=GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_0);
+		a[1]=GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_1);
+		a[2]=GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_2);
+		a[3]=GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_3);
+		a[4]=GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_4);
+		a[5]=GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_5);
+		a[6]=GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_6);
+		a[7]=GPIO_ReadOutputDataBit(GPIOB,GPIO_Pin_7);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_0);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_1);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_2);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_3);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_4);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_5);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_6);
+		GPIO_ResetBits(GPIOC , GPIO_Pin_7);
 	 
 	 	return 0;
  }
@@ -212,7 +203,7 @@ int oled(void)
  * 入  参 : 无
  * 返回值 : 无
  **************************************************************************************/
- int DS12C887_printf(void)
+int DS12C887_printf(void)
  {
     // 第一次启动后需要等较长的时间时钟才能开始走时   
     printf("%02d%02d-%02d-%02d", RTC2->CENTURY, RTC2->YEAR, RTC2->MONTH, RTC2->DATE);  

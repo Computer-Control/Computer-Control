@@ -30,3 +30,7 @@
 .\objects\main.o: .\Progs\includes\crc16.h
 .\objects\main.o: .\Progs\includes\usart.h
 .\objects\main.o: D:\wjyl\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\objects\main.o: .\Progs\includes\back.h
+.\objects\main.o: .\Progs\includes\pidadd.h
+.\objects\main.o: .\Progs\includes\OLED.h
+.\objects\main.o: D:\wjyl\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h

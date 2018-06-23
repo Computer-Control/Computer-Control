@@ -18,6 +18,16 @@ void Service_Init(void)
 	SPI_Fram_Init();	/*	spi初始化*/
 	printerInit();
 	keyInit();
+	
+	GPIO();
+	DS12C887_Init();
+	LCD_Init();
+	
+	delay_ms(500);	
+	
+	printf("DS12C887 RTC\n");  
+	
+  DS12C887();
 }
 int main(void)
 {
@@ -31,6 +41,18 @@ int main(void)
 			digitalout(0x08);
 			printf("%d,%d",keyboard,gpioin);
 			MODH_Poll();
+			
+			pid_add();
+		
+		  digital_in_out();
+			printf("\r\n *********************\r\n");	
+
+			printf("\r\n *****结束一次数字量*****\r\n"); 
+			
+			delay_ms(1500);
+			
+			oled();
+			DS12C887_printf();
 		}
 }
 

@@ -138,8 +138,8 @@ I (D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc
 I (.\Progs\includes\modbus_host.h)(0x5B2DAF08)
 I (.\Progs\includes\crc16.h)(0x5B2DAF94)
 I (.\Progs\includes\usart.h)(0x5B2DAEEA)
-F (.\Progs\main.c)(0x5B2DAD26)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Progs\includes -I .\Progs\modbus\includes-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE\Device\STM32F103VB-I D:\wjyl\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
-I (.\Progs\includes\main.h)(0x5B2DC7D5)
+F (.\Progs\main.c)(0x5B2DD192)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Progs\includes -I .\Progs\modbus\includes-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE\Device\STM32F103VB-I D:\wjyl\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F10X_MD-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Progs\includes\main.h)(0x5B2DD1FA)
 I (.\Progs\includes\fram.h)(0x5B2DAF68)
 I (D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc\stm32f10x_spi.h)(0x52F9EB20)
 I (D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
@@ -166,6 +166,10 @@ I (.\Progs\includes\timer.h)(0x5B2DAEE4)
 I (.\Progs\includes\crc16.h)(0x5B2DAF94)
 I (.\Progs\includes\usart.h)(0x5B2DAEEA)
 I (D:\wjyl\Keil_v5\ARM\ARMCC\include\stdio.h)(0x569DEA3A)
+I (.\Progs\includes\back.h)(0x5B2DD193)
+I (.\Progs\includes\pidadd.h)(0x5B2DC6E4)
+I (.\Progs\includes\OLED.h)(0x5B2DC8F4)
+I (D:\wjyl\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x569DEA3A)
 F (.\Progs\sources\digital.c)(0x5B2DAE60)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Progs\includes -I .\Progs\modbus\includes-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE\Device\STM32F103VB-I D:\wjyl\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F10X_MD-o .\objects\digital.o --omf_browse .\objects\digital.crf --depend .\objects\digital.d)
 I (.\Progs\includes\digital.h)(0x5B2DAF84)
 I (.\Progs\includes\keyboard.h)(0x5B2DAF48)
@@ -227,7 +231,7 @@ I (D:\wjyl\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x569DEA3A)
 I (.\Progs\includes\OLED.h)(0x5B2DC8F4)
 F (.\Progs\sources\pid.c)(0x5B2DC6E4)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Progs\includes -I .\Progs\modbus\includes-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE\Device\STM32F103VB-I D:\wjyl\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F10X_MD-o .\objects\pid.o --omf_browse .\objects\pid.crf --depend .\objects\pid.d)
 I (D:\wjyl\Keil_v5\ARM\ARMCC\include\stdio.h)(0x569DEA3A)
-F (.\Progs\sources\back.c)(0x5B2DCE16)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Progs\includes -I .\Progs\modbus\includes-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE\Device\STM32F103VB-I D:\wjyl\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F10X_MD-o .\objects\back.o --omf_browse .\objects\back.crf --depend .\objects\back.d)
+F (.\Progs\sources\back.c)(0x5B2DD193)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Progs\includes -I .\Progs\modbus\includes-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE\Device\STM32F103VB-I D:\wjyl\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F10X_MD-o .\objects\back.o --omf_browse .\objects\back.crf --depend .\objects\back.d)
 I (D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include\stm32f10x.h)(0x53BA0D60)
 I (C:\Users\liuhai\Desktop\Computer-Control\璁℃帶绋嬪簭鍛ㄦ槑寰?.2\RTE\RTE_Components.h)(0x00000000)
 I (D:\wjyl\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include\core_cm3.h)(0x5735959E)
@@ -247,7 +251,7 @@ I (D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc
 I (.\Progs\includes\delay.h)(0x5B2DC7B4)
 I (.\Progs\includes\OLED.h)(0x5B2DC8F4)
 I (D:\wjyl\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x569DEA3A)
-I (.\Progs\includes\DS12C887.h)(0x5B1E2B69)
+I (.\Progs\includes\DS12C887.h)(0x5B2DD1C0)
 I (.\Progs\includes\pidadd.h)(0x5B2DC6E4)
 I (D:\wjyl\Keil_v5\ARM\ARMCC\include\stdio.h)(0x569DEA3A)
 F (D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\src\misc.c)(0x52F9EB20)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork --split_sections -I .\Progs\includes -I .\Progs\modbus\includes-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE-I C:\Users\liuhai\Desktop\Computer-Control\计控程序周明德1.2\RTE\Device\STM32F103VB-I D:\wjyl\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.0-Beta4\CMSIS\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\Include-I D:\wjyl\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.1.0\Device\StdPeriph_Driver\inc-D__UVISION_VERSION="518" -D_RTE_ -DSTM32F10X_MD-o .\objects\misc.o --omf_browse .\objects\misc.crf --depend .\objects\misc.d)

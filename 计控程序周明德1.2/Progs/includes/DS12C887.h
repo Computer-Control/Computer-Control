@@ -46,5 +46,5 @@ typedef __packed struct
   
 #define RTC2_CR4_VRT 0x80  
   
-void DS12C887_Init(void); 
+int DS12C887_Init(void); 
   

@@ -11,4 +11,8 @@
 #include "stdio.h"
 #include "digital.h"
 
+#include "back.h"
+#include "pidadd.h"
+#include "OLED.h"
+
 #endif
